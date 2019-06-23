@@ -1,0 +1,95 @@
+include resume-mixins.pug
+
+#main
+  #title
+    h1 Steven Jeanneret
+    .subtitle Ingénieur en développement logiciel
+
+  .main-block
+    h2 #[i.fa.fa-suitcase] Expériences
+    
+    +item("Bachelor of science en informatique", "HE-Arc Ingénierie", "Neuchâtel", "2019", "2016")
+      :markdown-it
+        - Ingénieur en développement logiciel et multimédia
+
+    +item("Maturité professionnelle technique", "CPLN", "Neuchâtel", "2016", "2015")
+
+    +item("CFC D'informaticien", "CPLN", "Neuchâtel", "2015", "2011")
+
+    .main-block
+      h2 #[i.fa.fa-graduation-cap] Education
+
+      +item("Aide", "Jeanneret Combustibles", "Peseux", "2016")
+        :markdown-it
+          - Aide dans le domaine de la révision de citernes et assainissements de stockage
+          - Chauffeur du véhicule de service
+
+      +item("Stagiaire IT", "Bluestar Solutions", "Neuchâtel",  "2015", "2014")
+        :markdown-it
+          - Configuration de serveur
+          - Configuration d'ordinateur
+          - Support technique auprès des clients
+          - Mise en place de SaltStack pour la gestion du parc informatique
+
+    .main-block-blank
+        h2 Compétences
+        .content-block-blank
+          :markdown-it
+            ### Technologies Web
+            - **Back-End :** Django, Spring, Laravel, ASP .NET
+            - **Front-End :** Vue.js, Nuxt.js, jQuery, Bootstrap
+
+            ### Développement natif
+            - **Desktop :** Swing, WPF, Qt
+            - **Mobile :** Android Studio
+
+            ### Logiciels
+            - **Systèmes d'exploitation :** Linux (utilisation quotidienne), Windows 10
+            - **Outils de développement :** Suite JetBrains, Visual Studio Code, Git
+            - **Outils de rédaction :** Pandoc (rapport en Markdown), suite Microsoft Office, suite LibreOffice
+
+            ### Conecption / modélisation
+            - **Architecture :** Traitement parallèle de données, programmation concurrente, design patterns
+
+            ### Divers
+            - **Multimédia :** Traitement d'image, infographie
+            - Intelligence artificielle, machine learning
+            - Compilateurs, crypthographie
+
+
+#sidebar
+  #contact.side-block
+    h1 Contact
+    ul
+      li #[i.fa.fa-phone] <a href="tel:076 458 78 18">076 458 78 18</a>
+      li #[i.fa.fa-home] <a href="https://goo.gl/maps/147ArVqF4r5THzUo7">Rue des amandiers 15</a>
+      li#address 2000 Neuchâtel
+      li #[i.fa.fa-github] <a href="https://github.com/steven-jeanneret">github.com/steven-jeanneret</a>
+      li #[i.fa.fa-linkedin] <a href="https://www.linkedin.com/in/sje">linkedin.com/in/sje</a>
+      li #[i.fa.fa-envelope] <a href="mailto:steven.jeanneret@outlook.com">steven.jeanneret@outlook.com</a>
+
+  .others.side-block
+    h1 Autres informations
+    ul
+      li <b>Date de naissance :</b> 23/07/1996 (22)
+      li <b>Nationnalité :</b> suisse
+      li <b>Permis de conduire :</b> voiture
+
+  .others.side-block
+    h1 Langues
+    ul
+      li <b>Français :</b> langue maternelle
+      li <b>Allemand :</b> connaissances scolaires
+      li <b>Anglais :</b> connaissances scolaires
+      li#toeic 685 points au TOEIC
+
+  .others.side-block
+    h1 Loisirs
+    ul
+      li VTT
+      li Fitness
+      li Spinning
+      li Tir sportif
+
+style
+  include resume.scss
